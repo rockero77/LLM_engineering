@@ -17,10 +17,10 @@ db_name = "vector_db"
 class RetrievalEval(BaseModel):
     """Evaluation metrics for retrieval performance."""
 
-    mrr: float = Field(description="Mean Reciprocal Rank - average across all keywords")
-    ndcg: float = Field(description="Normalized Discounted Cumulative Gain (binary relevance)")
-    keywords_found: int = Field(description="Number of keywords found in top-k results")
-    total_keywords: int = Field(description="Total number of keywords to find")
+    mrr: float              = Field(description="Mean Reciprocal Rank - average across all keywords")
+    ndcg: float             = Field(description="Normalized Discounted Cumulative Gain (binary relevance)")
+    keywords_found: int     = Field(description="Number of keywords found in top-k results")
+    total_keywords: int     = Field(description="Total number of keywords to find")
     keyword_coverage: float = Field(description="Percentage of keywords found")
 
 
